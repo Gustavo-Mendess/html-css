@@ -8,7 +8,7 @@
     font-family: Begex;
     src:url(Begex.ttf);
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Noto+Sans+TC:wght@100;;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;display=swap');
 :root{
     --cor0:  #c5ebd6; 
     --cor1:  #83E1ad;
@@ -32,10 +32,8 @@ body{
 
 header{
  background-image: linear-gradient(to bottom,#2fa866,#063d1e); 
+ min-height: 120px;
 
- 
- min-height: 100px;
- 
 }
 
 header h1{
@@ -60,22 +58,21 @@ padding-right: 10px;
 
 
 nav a{
-    
     color: rgb(255, 255, 255);
     text-decoration: none;
-    margin-right: 3px;
-    padding: 10px 5px 3px 5px; 
-    font-family: Begex;
-    border-radius: 5px;
+    margin-right: 20px; 
+    padding: 6px;
+    font-family:'Noto Sans TC', sans-serif;
+    border-radius: 15px;
 
 }
 
 nav a:hover{
     background-color: #2fa866; 
-    padding: 10px 5px 3px 5px;
-    color: white;
+    
+    color: rgb(255, 255, 255);
     transition-duration: 0.2s;
-    border-radius: 5px;
+    border-radius: 4px;
 }
    
 main{
@@ -101,7 +98,7 @@ main img.pequena{
 
 main strong{
     color: #1a5c37;
-    background-color: var(--cor1);
+   font-size: 18px;
 }
 
 p main a{
@@ -110,9 +107,8 @@ p main a{
 
 }
 p a:hover{
-background-color: #1a5c37;
+background-color: #063d1e;
 color: white;
-text-decoration: underline;
 }
 
 main p{
@@ -130,7 +126,7 @@ main h1{
 }
 main h2{
 font-family:var(--fontoprincipal) ;
-color: white;
+color: #063d1e;
 background-image: linear-gradient(to right,#2fa866,transparent);
 margin-left: 10px;
 text-indent: 5%;
@@ -167,6 +163,7 @@ footer{
     background-color: #063d1e;
     padding: 10px;
     text-align: center;
+    text-decoration: none;
 }
 
 footer > p{
@@ -178,12 +175,10 @@ footer a{
     text-decoration: none;
     
 }
-footer a::after{
+.rodape::after{
     content: '\1F517';
 }
-a::after{
-    content: '\1F517';
-}
+
 div.video{
     background-color: #063d1e;
  
