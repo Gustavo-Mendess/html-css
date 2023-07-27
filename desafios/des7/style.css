@@ -1,0 +1,130 @@
+@charset 'UTF-8';
+
+/* IMPORT */
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+/* IMPORT */
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html,body{
+    min-height: 100vh;
+}
+:root{
+    --fontedestaque:'Passion One';
+    --fontenormal:'Sriracha'
+}
+
+/* Header */
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px; 
+}
+
+header h1{
+    font-family: var(--fontedestaque);
+    text-align: center;
+    font-size: 10vw;
+    font-variant: small-caps;
+    
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+/* Fim Header */
+
+/* Main */
+section{
+    line-height: 2em;
+    padding-left: 2%;
+    padding-top: 5%;
+    padding-bottom: 6%;
+
+}
+
+section.paragrafo > p{
+    background-color: rgba(0, 0, 0, 0.466);
+    display: inline-block; 
+    padding: 5px;
+}
+
+section>p{
+    padding-bottom: 40px;
+}
+
+section#img01{
+    background-image: url(img/background001.jpg); background-repeat: no-repeat;
+    background-position: right  center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+section#img02{
+    background-image: url(img/background002.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.normal{
+    font-family: var(--fontenormal);
+    font-size: 3.5vw;
+    
+}
+.paragrafo{
+    font-family: var(--fontenormal);
+    color: white;
+    font-size: 3.5vw;
+    text-shadow: 1px 1px 0px black;
+
+   
+}
+/* Fim Main */
+
+
+/* Footer */
+footer{
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2px;
+    text-align: center;
+    margin-top: 20px;
+}
+footer a{
+    
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    display: inline-block;
+}
+
+footer a:hover{
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
+}
+
+/* Fim Footer */
