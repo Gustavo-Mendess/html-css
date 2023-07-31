@@ -58,7 +58,7 @@ section{
 }
 
 section.paragrafo > p{
-    background-color: rgba(0, 0, 0, 0.466);
+    background-color: rgba(0, 0, 0, 0.243);
     display: inline-block; 
     padding: 5px;
 }
@@ -72,6 +72,7 @@ section#img01{
     background-position: right  center;
     background-size: cover;
     background-attachment: fixed;
+    
     
 }
 
@@ -105,26 +106,25 @@ footer{
     background-color: black;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 2px;
+    padding: 5px;  
+    font-size: 2vw;
+
     text-align: center;
-    margin-top: 15px;
+    
 }
 footer a{
-    
-    padding: 5px;
+   
     color: white;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    display: inline-block;
+   
 }
 
 footer a:hover{
-    border-radius: 5px;
-    padding: 5px;
     text-decoration: underline;
     color: rgb(255, 255, 255);
-    transform: scale(1.05);
+    
 }
 
 /* Fim Footer */
