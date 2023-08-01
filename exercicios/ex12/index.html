@@ -14,18 +14,22 @@
             color: purple;
         }
         table{
-            width: 100%;
+            width: 400px;
+            height: 400px;
             border-collapse: separate;
         }
         td{
             border: 1px solid blueviolet;
             cursor: wait;
             padding: 8px;        
+            text-align: center;   /*alinhamento horizontal*/
+            vertical-align: middle;
+            /* alinhamento vertical */
+        }
+        .numero{
+            text-align: right;
         }
         
-        td.dado{
-            background-color: purple;
-        }
         table caption{  
             caption-side: bottom;
             text-align: right;
@@ -47,16 +51,16 @@
         <table>
             <caption>Dados da empresa</caption>
                 <tr>
-                    <td class="dado">A1</td>
+                    <td>A1</td>
                     <td>B1</td>
                     <td>C1</td> 
                 </tr>
                 <tr>
                     <td>A2</td>
                     <td>B2</td>
-                    <td>C2</td>
+                    <td class="numero">C2</td>
                 </tr>
-                <tr class="linha">
+                <tr>
                     <td>A3</td>
                     <td>B3</td>
                     <td>C3</td>
