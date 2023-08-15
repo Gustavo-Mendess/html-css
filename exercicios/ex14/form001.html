@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+    *{
+     font-family: Arial, Helvetica, sans-serif;
+     }
+    </style>
+</head>
+<body>
+    <h1> Meu primeiro formulário</h1>
+
+    <!-- Action -->
+    <!-- Method GET ou POST -->
+    <!-- Autocomplete Input e form -->
+    <!-- Label -->
+    <!-- Name e Id -->
+    <!-- Required -->
+    <!-- Placeholder -->
+    <!-- Max e Min Length -->
+    <!-- Size -->
+    <!-- Input: Reset value= limpar -->
+    
+    <form action="cadastro.php" method="get" autocomplete="off" >
+        <p>
+             <label for="iusuario"></label> Usuario: <input type="text" name="usuario" id="iusuario" required  minlength="8" autocomplete="name" placeholder="Escreva seu nome" size="15">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
