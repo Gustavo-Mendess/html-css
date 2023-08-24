@@ -1,0 +1,13 @@
+li{
+    list-style-type: none;
+    display: none;
+}
+html,body{
+    color: black;
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+}
+article::after{
+    content: 'Site criado por Gustavo Mendes.';
+}
