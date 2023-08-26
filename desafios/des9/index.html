@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santos F.C</title>
+    <!-- Link CSS MEDIA QUERY TYPE E FEATURE () -->
+    <!-- Landscape Deitado/ Portrait Em pé -->
+    <!-- Screen and (orientation:),all -->
+    <link rel="stylesheet" href="style.css" media="all">
+    <link rel="stylesheet" href="retrato.css" media="screen and (orientatio:portrait)">
+    <link rel="stylesheet" href="paisagem.css" media="screen and (orientation:landscape)">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div>
+            <h1>Santos Futebol Clube</h1>
+        </div>
+        <div id="navbar">
+            <nav>
+                <a href="#"><li>Início</li></a>
+                <a href="#"><li>Contato</li></a>
+                <a href="#"><li>Sobre</li></a>
+            </nav>
+        </div>
+    </header>
+    <!-- Fim Header -->
+    <!-- Main -->
+    <main>
+        <div id="titulo">
+            <h1>Avaliação de Futebol</h1>
+            <p>Preencha o formulário abaixo:</p>
+        </div>
+        <!-- Datalist,textarea,select,output,optgroup,input,selectd,checked,placeholder,autocomplete,step,maxlength,min! -->
+        <form action="#" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Informações</legend>
+                
+                    <div>
+                        <label for="iname">Nome:</label>
+                        <input type="text" name="nome" id="iname" placeholder="Digite seu nome" autocomplete="name" required>
+                    </div>
+                    
+                    <div>
+                        <label for="isobrenome">Sobrenome:</label>
+                        <input type="text" name="sobrenome" id="isobrenome" placeholder="Digite seu sobrenome" autocomplete="nickname" required>
+                    </div>
+
+                    <div>
+                        <label for="iano">Ano:</label>
+                        <input type="number" name="ano" id="iano" max="2020" min="2004" value="2004" required oninput="caclIdade()">
+                    </div>
+
+                    <div>
+                        <label for="iidade">Idade:</label>
+                        <output id="iidade">0</output>
+                    </div>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Características</legend>
+                <div>
+                    <label for="iposicao">Posição:</label>
+                    <select name="posicao" id="iposicao" required>
+                        <optgroup label="Defesa">
+                        <option>Goleiro</option>
+                        <option>Lateral Esquerdo</option>
+                        <option>Lateral Direito</option>
+                        <option>Zagueiro</option>
+                        <option>Volante</option>
+                      </optgroup>
+                      <optgroup label="Meio-Campo">
+                        <option>Meia Central</option>
+                        <option>Meia Esquerda</option>
+                        <option>Meia Direita</option>
+                        <option>Meia</option>
+                        <option>Meia Atacante</option>
+                      </optgroup>
+                      <optgroup label="Ataque">
+                        <option>Ponta Esquerda</option>
+                        <option>Ponta Direita</option>
+                        <option>Atacante</option>
+                        <option>Segundo Atacante</option>
+                        <option>Centrovante</option>
+                      </optgroup>
+                      </select>
+                </div>
+                <div>
+                    <label for="iperna">Perna Dominante:</label>
+                    <select name="perna" id="iperna">
+                        <option value="">Escolha</option>
+                        <option>Direita</option>
+                        <option>Esquerda</option>
+                        <option>Ambas</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="iclube">Clubes que já atuou:</label>
+                    <input type="text" name="clube" id="iclube" list="list">
+                    <datalist id="list">
+                        <option >Nenhum</option>
+                    </datalist>
+                </div>
+            </fieldset>
+            <div id="envie">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+        <!-- script function -->
+        <script>
+            function caclIdade(){
+                let atual = new Date().getFullYear()
+                iidade.innerHTML= Number (atual) - Number(iano.value)
+            }
+        </script>
+    </main>
+    <!-- Fim Main -->
+
+</html>
